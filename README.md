@@ -1,108 +1,34 @@
-# 🌐 Open Work Framework (OWF)
+# 🌍 Open Work Framework (OWF)
 
-**A universal protocol for breaking down, tracking, and rewarding human contribution — with ownership embedded at the core.**
+**A way for people to work together on ideas and share ownership based on what they actually contribute.**
 
----
+Most ideas die because one person can't build them alone.
 
-## 🧭 Why OWF?
+OWF asks a simple question:
 
-In every collaborative endeavor — from startups to research to grassroots activism — valuable work often goes untracked, underappreciated, or unrewarded.
+> **What if anyone could contribute to making an idea real—and earn a fair stake for the work they actually do?**
 
-OWF exists to change that.
+## How it works
 
-We believe:
-- **Every meaningful contribution** deserves recognition.
-- **Work should be split and tracked**, not lost in chats or spreadsheets.
-- **Ownership** should reflect real effort — not just capital or titles.
-- **Incentives** should be programmable, permissionless, and transparent.
+1. **Someone puts forward an idea or problem.**
+2. **People contribute**—with code, design, research, connections, money, or actual work.
+3. **Contributions are recorded and evaluated openly.**
+4. **The people who make it happen share in what it creates.**
 
-OWF is a protocol to **decentralize how we define, coordinate, and reward work**.
+**Ideas matter. Execution matters more.**
 
----
+The person who starts an idea can be recognised for it. But most ownership belongs to the people who do the work to make it real.
 
-## 🔍 What Is OWF?
+## We're building OWF openly
 
-OWF is **not a tool or a platform**. It's a **framework** — a set of principles, primitives, and protocols for:
+The framework itself is our first experiment.
 
-- **Defining units of work** (Tasks, Ideas, Problems, Threads)
-- **Splitting large goals into atomic, verifiable contributions**
-- **Quantifying and tracking human effort**
-- **Rewarding contributions with tokens, reputation, or governance rights**
-- **Creating shared ownership in missions, not just companies**
+Our first question:
 
-OWF can be implemented across:
-- Codebases
-- Design projects
-- Research collaborations
-- Event planning
-- Governance proposals
-- ... and anything humans coordinate around
+> **How do we fairly measure and reward different kinds of contributions?**
 
----
+We don't have the final answer. **That's why this is open.**
 
-## 🧱 Core Components (Abstracted)
+If you think you can help—by challenging the idea, researching existing models, designing a system, or building something—join in.
 
-1. **Work Units** – any task, problem, or idea that needs to be done
-2. **Contributors** – any human who adds effort, insight, or execution
-3. **Splitting & Attribution** – a system for breaking down work and linking contributions
-4. **Reputation Graph** – a public memory of who did what
-5. **Reward Layer** – programmable incentives: tokens, sats, equity, NFTs, karma, etc.
-
----
-
-## 💡 What Can OWF Enable?
-
-- **Fairer startups** where contributors own a piece of what they build
-- **Open-source worlds** where recognition isn’t a GitHub graph
-- **DAOs & communities** that distribute value based on proof of effort
-- **NGOs & social projects** where every volunteer gets acknowledged
-- **Academic research** with transparent credit for every collaborator
-
----
-
-## 🌍 Our Values
-
-- **Open** – Anyone can participate, fork, or extend the framework
-- **Verifiable** – Contributions are linked to actions, not credentials
-- **Decentralized** – No single platform or authority needed
-- **Permissionless** – No gatekeepers for recognition or rewards
-- **Token-Agnostic** – Works with Bitcoin, ERC-20, or custom logic
-
----
-
-## 📦 Implementation-Agnostic
-
-OWF is a **philosophy, protocol, and scaffold** — not tied to GitHub, Notion, Figma, Discord, or any specific tool.
-
-We are currently building example implementations across:
-- Code collaboration
-- Event planning
-- Knowledge-sharing
-- Micro-tasks and modular bounties
-
-You can build your own on top of OWF, in any environment.
-
----
-
-## 🧠 Inspired By
-
-- Open source culture  
-- Agile & atomic design  
-- Bitcoin & programmable money  
-- Nostr & decentralized identity  
-- Liquid democracy & reputation systems  
-
----
-
-## 🤝 Contribute
-
-This repo exists to evolve the OWF philosophy and co-develop its building blocks.
-
-If you resonate with this idea, join us:
-- Submit thoughts, pull requests, or use cases
-- Fork and build your own OWF-powered project
-- Propose primitives or models that can generalize work and reward
-
-> **Let’s make work fair, transparent, and ownable. For everyone.**
-
----
+**→ [See what's being worked on](../../issues)**
