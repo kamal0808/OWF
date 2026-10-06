@@ -4,6 +4,8 @@
 
 Most ideas die because one person can't build them alone.
 
+> Definitions and rules: [SPEC.md](SPEC.md) (v0.1).
+
 OWF asks a simple question:
 
 > **What if anyone could contribute to making an idea real—and earn a fair stake for the work they actually do?**
