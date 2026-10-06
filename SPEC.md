@@ -57,6 +57,9 @@ Attribution answers "who". Value answers "how much". A dispute about one should 
 - Anyone can split a goal into needs. That's planning work, and it earns through "builds on" when the needs get done.
 - Needs carry no fixed price. Each shows an expected level ("probably level 5–6"), so people know roughly what it's worth before starting, while the real level is judged on delivery. *(default)*
 - Priority among needs is set by active credit, with the usual per-person vote cap. *(default)*
+- **Connecting ideas.** Ideas rarely arrive alone. Similar ideas are suggested for merging, and their authors accept or decline. Ideas can also be linked: one follows another (B only makes sense once A exists), or several sit side by side as parts of a bigger idea. The links form a map anyone can read, so people see where their work fits. *(default)*
+  - **Merged ideas share their slice.** Work built on the merged idea pays its 1% slice equally to the authors of every idea merged in that was posted before work started on any of them. An idea posted after work began on a similar one earns only if work builds on what it adds.
+  - **Links pass a share back, one level.** Work built on an idea counts toward that idea's slice of the 1%; a fixed share of that weight (20%, the same as impact) also counts toward the idea it follows or the bigger idea it's part of. One level only, so it stays explainable.
 - **Soft claims, no races.** Anyone can mark "I'm working on this"; the claim expires if they go quiet. Others can still work on it and are nudged to team up. A second delivery earns only for what it adds beyond the first. Races waste work, favour whoever has the most free time and turn builders into rivals.
 
 ## 4. The pools
@@ -110,6 +113,12 @@ Work done early carries more risk: the venture is worth nothing and will probabl
 
 Customers are the real judge of value: what people pay for a venture's product is the one score nobody can fake. But they pay for the product, not for each contribution, and most ventures earn nothing for a long time. So credit comes in two parts. A small award at hand-in says the work happened and roughly how big it was, so work done before any revenue still counts. Most credit comes later as impact, and once a venture earns money, that impact follows the money (section 10). *(default)*
 
+### The monthly statement
+
+Nobody should have to report their own work. People join, accept the agreement and work where they already work: code in the repo, posts on social media, photos of finished goods in the project's group. At the end of each period (a month by default), the implementation drafts each person's statement from the venture's tools and sends it to them: what they did, what it's worth, and "anything missing?" They can reply in words or a voice note to add what the tools couldn't see. The whole team sees every statement, and the period's money is paid out after the statement window closes. A contribution can also be handed in on its own at any time; it lands in the same statement. *(default)*
+
+Items drafted from a tool are confirmed by the tool (the pull request merged, the payment landed). Items a person adds need the receiver's confirmation (section 2).
+
 Every contribution goes through the same steps, and every step is recorded. Nothing is edited after the fact: corrections, challenges and impact are new entries on top of the old ones. *(default)*
 
 ### The record
@@ -127,9 +136,9 @@ Once it's judged, the record also holds the stage multiplier, the reference set 
 
 ### The steps
 
-1. **Handed in.** The record is created and timestamped. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
+1. **Recorded.** The record is created and timestamped, drafted from the venture's tools or added by the person. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
 2. **Judged.** The judge gives the contribution a level against the reference set (below) and a provisional award with its why. An AI judge runs at least three times and the middle level counts; if the runs are two or more levels apart, a person decides. Borderline work then doesn't swing between levels by chance. *(default)* Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
-3. **Challenge window.** Anyone can challenge it for a fixed period. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
+3. **Statement window.** The period's statements are visible to the whole team, and anyone can challenge an item for a fixed period. Silence counts as agreement. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
 4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
 5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
 
@@ -221,7 +230,7 @@ A public memory of who did what, across every venture.
 - **Credit is earned only by working.** It's never transferred, sold, gifted, lent, or charged interest or commission on. The only way to get work credit is to do work.
 - **Barter is allowed, as work for work.** Two people or teams can agree to work on each other's ventures ("I'll do your design, you do my backend"). Each earns credit where their work happened, judged on its own like any contribution. What's exchanged is work, never credit.
 - **No interest anywhere.** Capital comes in as ownership in the capital pool, never as a loan with interest.
-- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. Inside the work pool, each person's share of a period's profit P is their credit c over all credit S in the venture: **c × P ÷ S**, the formula OWF started with in 2022. *(default)*
+- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. Inside the work pool, each person's share of a period's profit P is their credit c over all credit S in the venture: **c × P ÷ S**, the formula OWF started with in 2022. It's paid each period, once the statement window closes. Before a venture makes a profit, the statement shows credit growing and pays nothing. *(default)*
 - **Corpus (optional).** A venture may keep a fixed share of profit as a reserve for running costs before paying out (2022 suggested 30%). It's set before the first contributor joins and only changed by a vote of active credit.
 - **Buy-back from profit.** Once a venture is profitable, a set share of profit buys back credit from anyone who wants out, at the last agreed valuation, paid over time. Bought-back credit is retired, so everyone else's % rises. This isn't a transfer: nobody else receives the credit. *(default)*
 
