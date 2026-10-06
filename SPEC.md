@@ -48,11 +48,18 @@ Attribution answers "who". Value answers "how much". A dispute about one should 
 
 **Credit.** Value expressed in the credit unit. Once given, credit never goes down. Impact can add to it later; only proven fraud removes it.
 
-**Ownership.** Your share of one venture, worked out from the pools in section 3.
+**Ownership.** Your share of one venture, worked out from the pools in section 4.
 
 **Dilution.** New credit shrinks everyone's % but never anyone's credit. Dilution is fair when the venture grows at least as much as your slice shrinks. People accept being diluted by someone who made the thing bigger. Junk doesn't need punishing: it keeps its credit but falls behind as good work earns impact.
 
-## 3. The pools
+## 3. Splitting big goals into needs
+
+- Anyone can split a goal into needs. That's planning work, and it earns through "builds on" when the needs get done.
+- Needs carry no fixed price. Each shows an expected range from the reference set ("similar work earned 30–60"), so people know roughly what it's worth before starting, while the real value is judged on delivery. *(default)*
+- Priority among needs is set by active credit, with the usual per-person vote cap. *(default)*
+- **Soft claims, no races.** Anyone can mark "I'm working on this"; the claim expires if they go quiet. Others can still work on it and are nudged to team up. A second delivery earns only for what it adds beyond the first. Races waste work, favour whoever has the most free time and turn builders into rivals.
+
+## 4. The pools
 
 Every venture's ownership is split into pools:
 
@@ -73,7 +80,7 @@ Every venture's ownership is split into pools:
 
 Example with a 1% network slice, after one raise of 20%: idea 1%, network 1%, capital 20%, work 78%.
 
-## 4. Defining 1 credit *(default)*
+## 5. Defining 1 credit *(default)*
 
 Credit has to mean the same thing on every venture and in every year, so it's anchored to a **reference set**: 10–15 real contributions with fixed credit amounts. For example, "a working landing page, shipped" = 50 and "10 real user interviews with notes" = 30.
 
@@ -82,7 +89,7 @@ Credit has to mean the same thing on every venture and in every year, so it's an
 - The set learns from outcomes. When impact keeps landing on a kind of work the set undervalues, the next version raises it. Nobody can price value perfectly up front, so the set follows what actually worked.
 - Every award shows the version it was judged under and one sentence on why.
 
-## 5. Early risk
+## 6. Early risk
 
 Work done early carries more risk: the venture is worth nothing and will probably die. Skill invested early is like seed money, so it earns a stage multiplier.
 
@@ -90,43 +97,82 @@ Work done early carries more risk: the venture is worth nothing and will probabl
 - A venture moves stage only on evidence (first live user, first revenue), dated by when the evidence happened, not when someone posted it.
 - Keep it small. Markets price early risk far higher, but a big multiplier lets early people own everything forever and makes newcomers not bother. The multiplier is a fairness nod, not a full risk price. Foundational work gets its real upside through impact on the work that builds on it.
 
-## 6. Capital and dilution *(default)*
+## 7. Capital and dilution *(default)*
 
 - **Between raises, capital's % is fixed.** New work dilutes only the work pool. Investors paid for a fixed share, and the work after a raise is what their money funds. Every raise says it in one sentence: "the work pool stays at X%, shared by everyone who contributes until the next raise."
 - **Each new raise dilutes the work pool and earlier capital proportionally.** The 1% is never touched. Earlier investors may buy in again at the new price to keep their share.
+- **No liquidation preference.** On any sale, at any price, everyone is paid by their %. Investors are never paid first: that would make builders work for capital whenever things go badly.
 - **Capital gets a return, not control.** Capital has no votes, and the capital pool has a ceiling below half, so builders always own most of what they build.
 
-## 7. Control *(default)*
+## 8. Control *(default)*
 
 - Raises, selling the venture, shutting it down and changing its licence are decided by **active credit**: credit held by people who contributed recently. Credit is owned forever, but only active builders steer. Without this, people who left slowly outvote the people building.
 - No single person carries more than a set share of any vote, however much credit they hold.
 - Anyone active can propose a rule change. It's adopted by the same vote, applies only to future work, and is never retroactive.
 
-## 8. Impact *(default)*
+## 9. Impact *(default)*
 
 - Each venture picks 1–3 outcome measures for its stage, locked before each measurement window.
 - Impact is paid per unit of outcome moved, with a cap, not as a fixed pot. A fixed pot turns builders into rivals who gain when others fail.
 - Impact adds credit to the contributions that moved the outcome, and through "builds on" to the work they stood on. It never takes credit away.
 
-## 9. Cash and access *(default)*
+## 10. Cash and access *(default)*
 
 Working for ownership alone only works for people who can afford to. Small cash payments for work are allowed, and whatever was paid in cash is subtracted from that contribution's credit.
 
-## 10. Disputes and legibility
+## 11. Maintenance
+
+Keeping things running (uptime, support, moderation, updates, books) is work, judged like all work by what got handled, never by time spent.
+
+- Handed in per period (e.g. monthly) as one contribution with evidence: incidents handled, requests answered, reviews done.
+- The reference set includes maintenance examples, so it's judged against real ones like everything else.
+- When something earns impact, part of it flows to the maintenance that kept it alive, because maintenance's value is that nothing broke. *(default)*
+
+## 12. Invisible work
+
+Help, coordination, dead ends and prevention leave no artifact of their own, so they need an explicit rule or they lose to self-promotion.
+
+- Helping someone (reviewing, mentoring, unblocking) is handed in by the helper as their own contribution. The evidence is the helped person's confirmation or a visible trace, and the value is judged by what changed in the helped work.
+- Help earns new credit, small and only when confirmed. It never comes out of the helped person's credit, so naming helpers costs nothing.
+- Dead ends with evidence ("we tested X, it doesn't work, here's the data") are work.
+- Coordination and planning earn through "builds on": work done from a plan sends impact back to it.
+- Implementations watch for pairs or groups who always confirm each other's help.
+
+## 13. Disputes and legibility
 
 - Disputes look for middle ground first: talk, then a mediator proposes middle options, and only as a last resort neutral people pick one of those options. Never all-or-nothing, except for fake work.
 - Responses are graduated between a value dispute and fraud: a note, then credit held pending review, then removal for proven fake work. *(default)*
 - Awards are provisional until the challenge window closes, then final. *(default)*
 - Show ownership as credit first, since it only grows. Show % next to what changed it and how far the venture has moved. Default to a personal view, and keep the full ledger public one step away. Put the most explanation into the bad moments: low awards, challenges, dilution and raises. *(default)*
 
-## 11. Lifecycle
+## 14. Reputation
+
+A public memory of who did what, across every venture.
+
+- A record, not a score: ventures worked on, credit earned, impact, confirmed help, and challenges upheld, each with its evidence. A single reputation number gets farmed the moment it exists.
+- Reputation never turns into ownership or votes anywhere. It's for deciding who to trust and work with.
+- Proven fraud stays on the record. Smaller upheld challenges fade after a set time, so people can learn. *(default)*
+- Pseudonyms are allowed. A verified identity is held privately, because owning and assigning work need a real person, but the public can see only the pseudonym and its full record. The record is the trust signal, not the name.
+
+## 15. Getting value out
+
+- **Credit is earned only by working.** It's never transferred, sold, gifted, lent, or charged interest or commission on. The only way to get work credit is to do work.
+- **Barter is allowed, as work for work.** Two people or teams can agree to work on each other's ventures ("I'll do your design, you do my backend"). Each earns credit where their work happened, judged on its own like any contribution. What's exchanged is work, never credit.
+- **No interest anywhere.** Capital comes in as ownership in the capital pool, never as a loan with interest.
+- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. *(default)*
+- **Buy-back from profit.** Once a venture is profitable, a set share of profit buys back credit from anyone who wants out, at the last agreed valuation, paid over time. Bought-back credit is retired, so everyone else's % rises. This isn't a transfer: nobody else receives the credit. *(default)*
+
+## 16. Lifecycle
 
 - **Joining** is open. Anyone can contribute to any venture.
 - **Leaving.** People who stop contributing keep all their credit. Only proven fraud loses it.
 - **Work from before the rules.** It's handed in with evidence and judged by the same rules as everyone's, before the first outside contributor joins. Nobody, founders included, gets credit by decree.
+- **Pivot.** Same venture, new outcome. All credit carries over: credit lives in the venture, not the product. Stage counts only what has evidence now, so a pivot that loses its users drops back a stage for new work. Day-to-day direction emerges from what people build; changing the venture's stated outcome takes a vote of active credit, because it changes what "fits what the venture needs now" means. The idea pool shifts on its own toward whoever proposed the new direction, as new work builds on it.
+- **Fork.** Forking is a right: anyone can take a venture's work and start a new venture without asking. It's the exit that keeps governance honest. The fork has its own ledger, and the original contributors get the credit of everything it reuses copied in as inherited credit. Everything up to the fork date counts as reused unless the forkers show otherwise. Inherited credit dilutes like any other and carries no vote in the fork unless its holders contribute there.
+- **Dormant and dead.** A venture with no contributions for a while is dormant, not dead. Anyone can revive it by contributing; old credit stays, and its stage has usually dropped, so revivers earn the higher multiplier. Credit stays on everyone's record as proof of work even when ownership is worth nothing. Selling what's left (code, name, users) is voted by active credit, or by all credit when nobody is active.
 - **Bake.** A venture may define a moment when credit converts into fixed equity (incorporation, a funding round). OWF allows it but doesn't require it.
 
-## 12. Invariants
+## 17. Invariants
 
 These hold in every OWF implementation:
 
@@ -136,9 +182,10 @@ These hold in every OWF implementation:
 4. Anyone can understand in one sentence why they got what they got.
 5. The idea pool is 1%, forever.
 6. Time is not value.
-7. Capital never steers.
+7. Capital never steers, and is never paid ahead of work.
+8. Credit is earned only by working: never transferred, sold, lent, or charged interest or commission on.
 
-## 13. Parameters
+## 18. Parameters
 
 Implementations set these. Suggested starting values:
 
@@ -150,10 +197,10 @@ Implementations set these. Suggested starting values:
 | Vote cap per person | 25% |
 | Network slice | 0–1% |
 
-## 14. Left to each implementation
+## 19. Left to each implementation
 
 How a tool's activity becomes evidence, who or what does the judging (and how it's protected from manipulation), challenge windows and costs, identity checks, the reference set itself, and the parameters above.
 
 ## Open questions
 
-- Credit can't be sold, so people who left pile up in every venture forever. Eventually a bake or a buy-back route is needed.
+- None at framework level for v0.1. Defaults marked *(default)* are open to change.
