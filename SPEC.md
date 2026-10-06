@@ -32,11 +32,11 @@ Credit is a unit of work, not of money. The same work at the same stage earns th
 
 **Idea.** A claim about what should be done, with no evidence. "People should do X." Talk, advice, discussion, gyaan. Good and bad gyaan look the same until someone acts on it.
 
-**Work.** Anything that comes with evidence someone else can check without trusting you. The same thought becomes work once it's backed: "I talked to 12 shopkeepers and 9 said X, here are the notes" is work. Connecting people, advising and coordinating count as work when there's evidence they happened and helped.
+**Work.** Something someone else received: a customer, a teammate or the venture itself. Until it's received, it's an idea, a plan or work in progress. A tailor's shirt counts when the customer takes it, code when it's merged, a campaign when it runs, twenty bags when the shop has them. Three questions decide it: does something new exist (if not, it's an idea); did someone else receive it (if not, it isn't finished); can the person who received it say so (if yes, it's work). Connecting people, advising and coordinating are work when the people they helped confirm it.
 
 **Contribution (the unit of work).** A claim that you added something to a venture, plus its evidence. A contribution is atomic if it's useful on its own and can be judged on its own. If splitting it doesn't produce two things that each stand alone, it's one contribution. *(default)*
 
-**Evidence.** Something another person can check without taking your word for it. Fabricated evidence (invented interviews, fake users) makes a contribution worthless. Which tools helped, AI included, never matters; whether it's real always does.
+**Evidence.** Something another person can check without taking your word for it. Most often it's the receiver's confirmation (a tap, a voice note, a signature, a merged pull request), plus whatever shows the thing itself (a link, a photo, notes). It has to work for people who can't read or write as well as for coders. A customer paying is the strongest confirmation there is. Fabricated evidence (invented interviews, fake users, a friend confirming work that never happened) makes a contribution worthless. Which tools helped, AI included, never matters; whether it's real always does.
 
 **Attribution (the unit of attribution).** Two things about a contribution, kept separate from its value:
 - **Who**: the people behind it and their split, adding up to 1. One person proposes the whole split from the evidence and every person named confirms or counters it. Nobody states their own share separately, because self-estimates of joint work always add up to more than 100%. *(default)*
