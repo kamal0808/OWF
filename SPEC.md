@@ -117,12 +117,12 @@ Once it's judged, the record also holds the stage multiplier, the reference set 
 ### The steps
 
 1. **Handed in.** The record is created and timestamped. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
-2. **Judged.** The judge places the contribution against the reference set (below) and gives a provisional award with its why. Nobody judges a contribution they're named on, or one that builds on their own work.
+2. **Judged.** The judge places the contribution against the reference set (below) and gives a provisional award with its why. Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. *(default)*
 3. **Challenge window.** Anyone can challenge it for a fixed period. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
 4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
 5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
 
-Provisional awards are shown as pending. They don't count toward ownership % or votes until they're final.
+Provisional awards are shown as pending. They don't count toward ownership % or votes until the challenge window closes. After that, a contribution still under a value challenge counts at the amount the challenger proposed until it's settled, so a challenge can delay credit but can't wipe it out of a vote. *(default)*
 
 ### The value formula
 
@@ -140,9 +140,11 @@ Each person on a contribution gets:
 ### Overlap, splitting and padding
 
 - **Overlap is judged at the margin.** If earlier work already covers part of this one (a second delivery on the same need, a redo, a fix), it's placed only for what it adds beyond what existed at hand-in.
-- **Splitting doesn't pay.** Contributions from the same people toward the same need inside one challenge window are judged together as one. *(default)*
+- **Splitting doesn't pay.** Work from the same people toward the same need is judged as a running total. Each new piece re-places everything they've handed in for that need so far, and they earn the difference from what they've already been awarded (never less than zero). Five pieces handed in over five weeks earn what the whole would have. *(default)*
+- **Small work adds up.** The same running total lets small pieces count (a typo fixed here, a reply there) without each one having to clear the reference set on its own.
 - **Padding doesn't pay.** Length, polish and volume aren't value. Placement compares what the work does, and the reference set includes short, high-value examples so the judge has something to compare against.
 - **Reposting doesn't pay.** Evidence already used in an earlier contribution earns nothing again.
+- **Repetition doesn't pay.** Low-value work handed in over and over is placed at the margin, so the tenth copy of something adds close to nothing. Catching fake work is what matters most: in simulation, fake work that slips through is the biggest leak of credit away from real builders.
 
 ## 8. Capital and dilution *(default)*
 
@@ -154,7 +156,7 @@ Each person on a contribution gets:
 ## 9. Control *(default)*
 
 - Raises, selling the venture, shutting it down and changing its licence are decided by **active credit**: credit held by people who contributed recently. Credit is owned forever, but only active builders steer. Without this, people who left slowly outvote the people building.
-- No single person carries more than a set share of any vote, however much credit they hold.
+- No single person carries more than a set share of any vote, however much credit they hold. The cap and "active" count per verified identity, not per account, so spreading credit across extra accounts (for example by naming them on a split) gains no extra say. *(default)*
 - Anyone active can propose a rule change. It's adopted by the same vote, applies only to future work, and is never retroactive.
 
 ## 10. Impact *(default)*
@@ -162,7 +164,8 @@ Each person on a contribution gets:
 - Each venture picks 1–3 outcome measures for its stage, locked before each measurement window.
 - Impact is paid per unit of outcome moved, with a cap, not as a fixed pot. A fixed pot turns builders into rivals who gain when others fail.
 - Impact adds credit to the contributions that moved the outcome, and through "builds on" to the work they stood on. It never takes credit away.
-- A fixed share of each impact award passes to the direct builds-on of the contribution that earned it, one level only. Longer chains get impossible to explain, and work further back already earned from the level in between. *(default)*
+- Impact is judged like value: the same outside judge decides which contributions moved the outcome and by how much, comparing them with each other, and gives a one-sentence why. Only work handed in before the measurement window started can earn that window's impact. *(default)*
+- A fixed share of each impact award passes to the direct builds-on of the contribution that earned it, one level only, out of the award rather than on top of it, so building on your own work never earns twice. Longer chains get impossible to explain, and work further back already earned from the level in between. *(default)*
 
 ## 11. Cash and access *(default)*
 
