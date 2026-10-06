@@ -97,30 +97,78 @@ Work done early carries more risk: the venture is worth nothing and will probabl
 - A venture moves stage only on evidence (first live user, first revenue), dated by when the evidence happened, not when someone posted it.
 - Keep it small. Markets price early risk far higher, but a big multiplier lets early people own everything forever and makes newcomers not bother. The multiplier is a fairness nod, not a full risk price. Foundational work gets its real upside through impact on the work that builds on it.
 
-## 7. Capital and dilution *(default)*
+## 7. From hand-in to credit
+
+Every contribution goes through the same steps, and every step is recorded. Nothing is edited after the fact: corrections, challenges and impact are new entries on top of the old ones. *(default)*
+
+### The record
+
+A contribution is handed in with:
+
+- **Claim**: what was done, in a sentence or two.
+- **Evidence**: links or files someone else can check.
+- **Who**: the people behind it and the proposed split, adding up to 1.
+- **Builds on**: the idea, need or earlier contributions it stands on.
+- **Need** (optional): the posted need it answers.
+- **Cash** (if any): the share of this work already paid in money.
+
+Once it's judged, the record also holds the stage multiplier, the reference set version, the award and the one-sentence why.
+
+### The steps
+
+1. **Handed in.** The record is created and timestamped. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
+2. **Judged.** The judge places the contribution against the reference set (below) and gives a provisional award with its why. Nobody judges a contribution they're named on, or one that builds on their own work.
+3. **Challenge window.** Anyone can challenge it for a fixed period. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
+4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
+5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
+
+Provisional awards are shown as pending. They don't count toward ownership % or votes until they're final.
+
+### The value formula
+
+Each person on a contribution gets:
+
+**credit = placement × stage multiplier × (1 − cash share) × their split**
+
+- **Placement** is where the work sits against the reference set. The judge names the reference item just below it and the one just above it, and says where in between it falls ("between *landing page shipped* (50) and *signup flow live* (80), closer to 50 because nobody has used it yet"). Placement is that number. Judging is always a comparison against named examples, never a number out of thin air, and those two examples plus the reason are the one-sentence why.
+- Work below the smallest reference item is placed between zero and that item. Work above the largest goes to more than one judge, and the reference set is due to grow.
+- The judge may use a rubric to reach the placement (quality, fit with what the venture needs now, how checkable the evidence is), but what comes out is always a placement between named examples. A rubric score is never turned into credit directly.
+- **Stage multiplier** is the venture's stage at hand-in (section 6). It's fixed at that moment, even if the stage is later backdated.
+- **Cash share** is the part of the work already paid in money, agreed when the payment was agreed: half paid means half the credit. *(default)*
+- The reference set version is the one published at hand-in.
+
+### Overlap, splitting and padding
+
+- **Overlap is judged at the margin.** If earlier work already covers part of this one (a second delivery on the same need, a redo, a fix), it's placed only for what it adds beyond what existed at hand-in.
+- **Splitting doesn't pay.** Contributions from the same people toward the same need inside one challenge window are judged together as one. *(default)*
+- **Padding doesn't pay.** Length, polish and volume aren't value. Placement compares what the work does, and the reference set includes short, high-value examples so the judge has something to compare against.
+- **Reposting doesn't pay.** Evidence already used in an earlier contribution earns nothing again.
+
+## 8. Capital and dilution *(default)*
 
 - **Between raises, capital's % is fixed.** New work dilutes only the work pool. Investors paid for a fixed share, and the work after a raise is what their money funds. Every raise says it in one sentence: "the work pool stays at X%, shared by everyone who contributes until the next raise."
 - **Each new raise dilutes the work pool and earlier capital proportionally.** The 1% is never touched. Earlier investors may buy in again at the new price to keep their share.
 - **No liquidation preference.** On any sale, at any price, everyone is paid by their %. Investors are never paid first: that would make builders work for capital whenever things go badly.
 - **Capital gets a return, not control.** Capital has no votes, and the capital pool has a ceiling below half, so builders always own most of what they build.
 
-## 8. Control *(default)*
+## 9. Control *(default)*
 
 - Raises, selling the venture, shutting it down and changing its licence are decided by **active credit**: credit held by people who contributed recently. Credit is owned forever, but only active builders steer. Without this, people who left slowly outvote the people building.
 - No single person carries more than a set share of any vote, however much credit they hold.
 - Anyone active can propose a rule change. It's adopted by the same vote, applies only to future work, and is never retroactive.
 
-## 9. Impact *(default)*
+## 10. Impact *(default)*
 
 - Each venture picks 1–3 outcome measures for its stage, locked before each measurement window.
 - Impact is paid per unit of outcome moved, with a cap, not as a fixed pot. A fixed pot turns builders into rivals who gain when others fail.
 - Impact adds credit to the contributions that moved the outcome, and through "builds on" to the work they stood on. It never takes credit away.
+- A fixed share of each impact award passes to the direct builds-on of the contribution that earned it, one level only. Longer chains get impossible to explain, and work further back already earned from the level in between. *(default)*
 
-## 10. Cash and access *(default)*
+## 11. Cash and access *(default)*
 
-Working for ownership alone only works for people who can afford to. Small cash payments for work are allowed, and whatever was paid in cash is subtracted from that contribution's credit.
+Working for ownership alone only works for people who can afford to. Small cash payments for work are allowed, and whatever was paid in cash is subtracted from that contribution's credit, as a share agreed when the payment is agreed (section 7).
 
-## 11. Maintenance
+## 12. Maintenance
 
 Keeping things running (uptime, support, moderation, updates, books) is work, judged like all work by what got handled, never by time spent.
 
@@ -128,7 +176,7 @@ Keeping things running (uptime, support, moderation, updates, books) is work, ju
 - The reference set includes maintenance examples, so it's judged against real ones like everything else.
 - When something earns impact, part of it flows to the maintenance that kept it alive, because maintenance's value is that nothing broke. *(default)*
 
-## 12. Invisible work
+## 13. Invisible work
 
 Help, coordination, dead ends and prevention leave no artifact of their own, so they need an explicit rule or they lose to self-promotion.
 
@@ -138,14 +186,14 @@ Help, coordination, dead ends and prevention leave no artifact of their own, so 
 - Coordination and planning earn through "builds on": work done from a plan sends impact back to it.
 - Implementations watch for pairs or groups who always confirm each other's help.
 
-## 13. Disputes and legibility
+## 14. Disputes and legibility
 
 - Disputes look for middle ground first: talk, then a mediator proposes middle options, and only as a last resort neutral people pick one of those options. Never all-or-nothing, except for fake work.
 - Responses are graduated between a value dispute and fraud: a note, then credit held pending review, then removal for proven fake work. *(default)*
 - Awards are provisional until the challenge window closes, then final. *(default)*
 - Show ownership as credit first, since it only grows. Show % next to what changed it and how far the venture has moved. Default to a personal view, and keep the full ledger public one step away. Put the most explanation into the bad moments: low awards, challenges, dilution and raises. *(default)*
 
-## 14. Reputation
+## 15. Reputation
 
 A public memory of who did what, across every venture.
 
@@ -154,7 +202,7 @@ A public memory of who did what, across every venture.
 - Proven fraud stays on the record. Smaller upheld challenges fade after a set time, so people can learn. *(default)*
 - Pseudonyms are allowed. A verified identity is held privately, because owning and assigning work need a real person, but the public can see only the pseudonym and its full record. The record is the trust signal, not the name.
 
-## 15. Getting value out
+## 16. Getting value out
 
 - **Credit is earned only by working.** It's never transferred, sold, gifted, lent, or charged interest or commission on. The only way to get work credit is to do work.
 - **Barter is allowed, as work for work.** Two people or teams can agree to work on each other's ventures ("I'll do your design, you do my backend"). Each earns credit where their work happened, judged on its own like any contribution. What's exchanged is work, never credit.
@@ -162,7 +210,7 @@ A public memory of who did what, across every venture.
 - **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. *(default)*
 - **Buy-back from profit.** Once a venture is profitable, a set share of profit buys back credit from anyone who wants out, at the last agreed valuation, paid over time. Bought-back credit is retired, so everyone else's % rises. This isn't a transfer: nobody else receives the credit. *(default)*
 
-## 16. Lifecycle
+## 17. Lifecycle
 
 - **Joining** is open. Anyone can contribute to any venture.
 - **Leaving.** People who stop contributing keep all their credit. Only proven fraud loses it.
@@ -172,7 +220,7 @@ A public memory of who did what, across every venture.
 - **Dormant and dead.** A venture with no contributions for a while is dormant, not dead. Anyone can revive it by contributing; old credit stays, and its stage has usually dropped, so revivers earn the higher multiplier. Credit stays on everyone's record as proof of work even when ownership is worth nothing. Selling what's left (code, name, users) is voted by active credit, or by all credit when nobody is active.
 - **Bake.** A venture may define a moment when credit converts into fixed equity (incorporation, a funding round). OWF allows it but doesn't require it.
 
-## 17. Invariants
+## 18. Invariants
 
 These hold in every OWF implementation:
 
@@ -185,7 +233,7 @@ These hold in every OWF implementation:
 7. Capital never steers, and is never paid ahead of work.
 8. Credit is earned only by working: never transferred, sold, lent, or charged interest or commission on.
 
-## 18. Parameters
+## 19. Parameters
 
 Implementations set these. Suggested starting values:
 
@@ -196,8 +244,10 @@ Implementations set these. Suggested starting values:
 | "Active" for voting | contributed in the last 6 months |
 | Vote cap per person | 25% |
 | Network slice | 0–1% |
+| Challenge window | 7 days |
+| Impact share passed to builds-on | 20% |
 
-## 19. Left to each implementation
+## 20. Left to each implementation
 
 How a tool's activity becomes evidence, who or what does the judging (and how it's protected from manipulation), challenge windows and costs, identity checks, the reference set itself, and the parameters above.
 
