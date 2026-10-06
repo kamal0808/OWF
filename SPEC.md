@@ -36,7 +36,7 @@ Credit is a unit of work, not of money. The same work at the same stage earns th
 
 **Contribution (the unit of work).** A claim that you added something to a venture, plus its evidence. A contribution is atomic if it's useful on its own and can be judged on its own. If splitting it doesn't produce two things that each stand alone, it's one contribution. *(default)*
 
-**Evidence.** Something another person can check without taking your word for it. Most often it's the receiver's confirmation (a tap, a voice note, a signature, a merged pull request), plus whatever shows the thing itself (a link, a photo, notes). It has to work for people who can't read or write as well as for coders. A customer paying is the strongest confirmation there is. Fabricated evidence (invented interviews, fake users, a friend confirming work that never happened) makes a contribution worthless. Which tools helped, AI included, never matters; whether it's real always does.
+**Evidence.** Something another person can check without taking your word for it. Most often it's the receiver saying so, plus whatever shows the thing itself. Confirming must be possible for anyone, including people who can't read or write. A customer paying is the strongest confirmation there is. Fabricated evidence (invented interviews, fake users, a friend confirming work that never happened) makes a contribution worthless. Which tools helped, AI included, never matters; whether it's real always does.
 
 **Attribution (the unit of attribution).** Two things about a contribution, kept separate from its value:
 - **Who**: the people behind it and their split, adding up to 1. One person proposes the whole split from the evidence and every person named confirms or counters it. Nobody states their own share separately, because self-estimates of joint work always add up to more than 100%. *(default)*
@@ -113,11 +113,15 @@ Work done early carries more risk: the venture is worth nothing and will probabl
 
 Customers are the real judge of value: what people pay for a venture's product is the one score nobody can fake. But they pay for the product, not for each contribution, and most ventures earn nothing for a long time. So credit comes in two parts. A small award at hand-in says the work happened and roughly how big it was, so work done before any revenue still counts. Most credit comes later as impact, and once a venture earns money, that impact follows the money (section 10). *(default)*
 
-### The monthly statement
+### Settling each period
 
-Nobody should have to report their own work. People join, accept the agreement and work where they already work: code in the repo, posts on social media, photos of finished goods in the project's group. At the end of each period (a month by default), the implementation drafts each person's statement from the venture's tools and sends it to them: what they did, what it's worth, and "anything missing?" They can reply in words or a voice note to add what the tools couldn't see. The whole team sees every statement, and the period's money is paid out after the statement window closes. A contribution can also be handed in on its own at any time; it lands in the same statement. *(default)*
+Nobody should have to report their own work. Work is recorded from where it happens, and settled once per period (a month by default):
 
-Items drafted from a tool are confirmed by the tool (the pull request merged, the payment landed). Items a person adds need the receiver's confirmation (section 2).
+- Each person sees their record for the period, what it's worth, and can add what the record missed.
+- Everyone in the venture sees everyone's record, and anyone can object within a fixed window. Silence is agreement.
+- When the window closes, the period's credit is final and its profit is paid out (section 16).
+- Work recorded where it happened is confirmed by that record itself (the code was merged, the payment arrived). Work a person adds needs the receiver to confirm it (section 2).
+- A contribution can also be recorded on its own at any time; it settles with the rest of its period. *(default)*
 
 Every contribution goes through the same steps, and every step is recorded. Nothing is edited after the fact: corrections, challenges and impact are new entries on top of the old ones. *(default)*
 
@@ -136,9 +140,9 @@ Once it's judged, the record also holds the stage multiplier, the reference set 
 
 ### The steps
 
-1. **Recorded.** The record is created and timestamped, drafted from the venture's tools or added by the person. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
-2. **Judged.** The judge gives the contribution a level against the reference set (below) and a provisional award with its why. An AI judge runs at least three times and the middle level counts; if the runs are two or more levels apart, a person decides. Borderline work then doesn't swing between levels by chance. *(default)* Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
-3. **Statement window.** The period's statements are visible to the whole team, and anyone can challenge an item for a fixed period. Silence counts as agreement. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
+1. **Recorded.** The record is created and timestamped, recorded from where the work happened or added by the person. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
+2. **Judged.** The judge gives the contribution a level against the reference set (below) and a provisional award with its why. If the judge can give different answers to the same work (any automated judge can), it judges several times and the middle level counts; when its answers are two or more levels apart, a person decides. Borderline work then doesn't swing between levels by chance. *(default)* Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
+3. **Objection window.** The period's records are visible to the whole venture, and anyone can challenge an item for a fixed period. Silence counts as agreement. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
 4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
 5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
 
@@ -230,7 +234,7 @@ A public memory of who did what, across every venture.
 - **Credit is earned only by working.** It's never transferred, sold, gifted, lent, or charged interest or commission on. The only way to get work credit is to do work.
 - **Barter is allowed, as work for work.** Two people or teams can agree to work on each other's ventures ("I'll do your design, you do my backend"). Each earns credit where their work happened, judged on its own like any contribution. What's exchanged is work, never credit.
 - **No interest anywhere.** Capital comes in as ownership in the capital pool, never as a loan with interest.
-- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. Inside the work pool, each person's share of a period's profit P is their credit c over all credit S in the venture: **c × P ÷ S**, the formula OWF started with in 2022. It's paid each period, once the statement window closes. Before a venture makes a profit, the statement shows credit growing and pays nothing. *(default)*
+- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. Inside the work pool, each person's share of a period's profit P is their credit c over all credit S in the venture: **c × P ÷ S**, the formula OWF started with in 2022. It's paid each period, once the objection window closes (section 7). Before a venture makes a profit, credit keeps growing and nothing is paid. *(default)*
 - **Corpus (optional).** A venture may keep a fixed share of profit as a reserve for running costs before paying out (2022 suggested 30%). It's set before the first contributor joins and only changed by a vote of active credit.
 - **Buy-back from profit.** Once a venture is profitable, a set share of profit buys back credit from anyone who wants out, at the last agreed valuation, paid over time. Bought-back credit is retired, so everyone else's % rises. This isn't a transfer: nobody else receives the credit. *(default)*
 
@@ -269,7 +273,7 @@ Implementations set these. Suggested starting values:
 | Vote cap per person | 25% |
 | Network slice | 0–1% |
 | Corpus kept from profit | 0–30% |
-| AI judge runs per contribution | 3 (middle level counts) |
+| Judgements per contribution, when the judge varies | 3 (middle level counts) |
 | Challenge window | 7 days |
 | Impact share passed to builds-on | 20% |
 
