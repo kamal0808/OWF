@@ -55,7 +55,7 @@ Attribution answers "who". Value answers "how much". A dispute about one should 
 ## 3. Splitting big goals into needs
 
 - Anyone can split a goal into needs. That's planning work, and it earns through "builds on" when the needs get done.
-- Needs carry no fixed price. Each shows an expected range from the reference set ("similar work earned 30–60"), so people know roughly what it's worth before starting, while the real value is judged on delivery. *(default)*
+- Needs carry no fixed price. Each shows an expected level ("probably level 5–6"), so people know roughly what it's worth before starting, while the real level is judged on delivery. *(default)*
 - Priority among needs is set by active credit, with the usual per-person vote cap. *(default)*
 - **Soft claims, no races.** Anyone can mark "I'm working on this"; the claim expires if they go quiet. Others can still work on it and are nudged to team up. A second delivery earns only for what it adds beyond the first. Races waste work, favour whoever has the most free time and turn builders into rivals.
 
@@ -82,12 +82,21 @@ Example with a 1% network slice, after one raise of 20%: idea 1%, network 1%, ca
 
 ## 5. Defining 1 credit *(default)*
 
-Credit has to mean the same thing on every venture and in every year, so it's anchored to a **reference set**: 10–15 real contributions with fixed credit amounts. For example, "a working landing page, shipped" = 50 and "10 real user interviews with notes" = 30.
+Credit has to mean the same thing on every venture and in every year, so it's anchored to **levels** and a **reference set**.
 
-- Every judgement compares new work against the reference set. Nobody scores in the abstract.
+Every contribution gets a level from 0 to 10 for how much it moves the venture forward. Each level is worth a fixed number of credits, growing like the Fibonacci sequence:
+
+| Level | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Credit | 0 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 | 89 |
+
+- **The level measures value, not difficulty.** It's how much the work changed things for users, the product or the venture. Difficulty, length, polish and time spent can't raise it on their own: whatever gets scored gets gamed, and scoring complexity rewards making work look hard. *(default)*
+- **Level 0 is not work.** Ideas, opinions and plans without checkable evidence earn no credit; ideas earn from the 1% pool instead. Without a zero, every comment would earn something, and a floor on small things is what makes splitting and fake work pay.
+- **Why Fibonacci.** Each level is about 1.6× the one below, which matches how people and models compare sizes: by ratio, not by difference. A linear 1–10 scale caps the biggest work at 10× the smallest and pays tiny work far too much (in simulation, splitting paid 2.9× and fake work took 43% of credit). With Fibonacci levels the simulation matched free-number judging within a few percent.
+- **The reference set** is real contributions at each level, one or more per level, so every judgement compares new work against examples. Nobody scores in the abstract.
 - The set is versioned. A new version applies only to work handed in after it's published, never retroactively.
 - The set learns from outcomes. When impact keeps landing on a kind of work the set undervalues, the next version raises it. Nobody can price value perfectly up front, so the set follows what customers actually paid for. Prices are never fixed for good: each version moves toward where the money went.
-- Every award shows the version it was judged under and one sentence on why.
+- Every award shows the level, the version it was judged under and one sentence on why ("level 6 = 13: users would miss it, like *The Wall*").
 
 ## 6. Early risk
 
@@ -119,7 +128,7 @@ Once it's judged, the record also holds the stage multiplier, the reference set 
 ### The steps
 
 1. **Handed in.** The record is created and timestamped. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
-2. **Judged.** The judge places the contribution against the reference set (below) and gives a provisional award with its why. Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
+2. **Judged.** The judge gives the contribution a level against the reference set (below) and a provisional award with its why. An AI judge runs at least three times and the middle level counts; if the runs are two or more levels apart, a person decides. Borderline work then doesn't swing between levels by chance. *(default)* Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
 3. **Challenge window.** Anyone can challenge it for a fixed period. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
 4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
 5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
@@ -130,11 +139,10 @@ Provisional awards are shown as pending. They don't count toward ownership % or 
 
 Each person on a contribution gets:
 
-**credit = placement × stage multiplier × (1 − cash share) × their split**
+**credit = level credit × stage multiplier × (1 − cash share) × their split**
 
-- **Placement** is where the work sits against the reference set. The judge names the reference item just below it and the one just above it, and says where in between it falls ("between *landing page shipped* (50) and *signup flow live* (80), closer to 50 because nobody has used it yet"). Placement is that number. Judging is always a comparison against named examples, never a number out of thin air, and those two examples plus the reason are the one-sentence why.
-- Work below the smallest reference item is placed between zero and that item. Work above the largest goes to more than one judge, and the reference set is due to grow.
-- The judge may use a rubric to reach the placement (quality, fit with what the venture needs now, how checkable the evidence is), but what comes out is always a placement between named examples. A rubric score is never turned into credit directly.
+- **Level credit** is the credit for the contribution's level (section 5). The judge picks the level by comparing the work with reference examples at nearby levels, and the example plus the reason are the one-sentence why.
+- The judge may use a rubric to reach the level (what changed, fit with what the venture needs now, how checkable the evidence is), but what comes out is always a level. A rubric score is never turned into credit directly.
 - **Stage multiplier** is the venture's stage at hand-in (section 6). It's fixed at that moment, even if the stage is later backdated.
 - **Cash share** is the part of the work already paid in money, agreed when the payment was agreed: half paid means half the credit. *(default)*
 - The reference set version is the one published at hand-in.
@@ -142,9 +150,9 @@ Each person on a contribution gets:
 ### Overlap, splitting and padding
 
 - **Overlap is judged at the margin.** If earlier work already covers part of this one (a second delivery on the same need, a redo, a fix), it's placed only for what it adds beyond what existed at hand-in.
-- **Splitting doesn't pay.** Work from the same people toward the same need is judged as a running total. Each new piece re-places everything they've handed in for that need so far, and they earn the difference from what they've already been awarded (never less than zero). Five pieces handed in over five weeks earn what the whole would have. *(default)*
-- **Small work adds up.** The same running total lets small pieces count (a typo fixed here, a reply there) without each one having to clear the reference set on its own.
-- **Padding doesn't pay.** Length, polish and volume aren't value. Placement compares what the work does, and the reference set includes short, high-value examples so the judge has something to compare against.
+- **Splitting doesn't pay.** Work from the same people toward the same need is judged as a running total. Each new piece re-levels everything they've handed in for that need so far, and they earn the difference from what they've already been awarded (never less than zero). Five pieces handed in over five weeks earn what the whole would have. *(default)*
+- **Small work adds up.** The same running total lets small pieces count (a typo fixed here, a reply there) without each one having to reach level 1 on its own.
+- **Padding doesn't pay.** Length, polish and volume aren't value. The level is set by what the work does, and the reference set includes short, high-value examples so the judge has something to compare against.
 - **Reposting doesn't pay.** Evidence already used in an earlier contribution earns nothing again.
 - **Repetition doesn't pay.** Low-value work handed in over and over is placed at the margin, so the tenth copy of something adds close to nothing. Catching fake work is what matters most: in simulation, fake work that slips through is the biggest leak of credit away from real builders.
 
@@ -213,7 +221,8 @@ A public memory of who did what, across every venture.
 - **Credit is earned only by working.** It's never transferred, sold, gifted, lent, or charged interest or commission on. The only way to get work credit is to do work.
 - **Barter is allowed, as work for work.** Two people or teams can agree to work on each other's ventures ("I'll do your design, you do my backend"). Each earns credit where their work happened, judged on its own like any contribution. What's exchanged is work, never credit.
 - **No interest anywhere.** Capital comes in as ownership in the capital pool, never as a loan with interest.
-- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. *(default)*
+- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. Inside the work pool, each person's share of a period's profit P is their credit c over all credit S in the venture: **c × P ÷ S**, the formula OWF started with in 2022. *(default)*
+- **Corpus (optional).** A venture may keep a fixed share of profit as a reserve for running costs before paying out (2022 suggested 30%). It's set before the first contributor joins and only changed by a vote of active credit.
 - **Buy-back from profit.** Once a venture is profitable, a set share of profit buys back credit from anyone who wants out, at the last agreed valuation, paid over time. Bought-back credit is retired, so everyone else's % rises. This isn't a transfer: nobody else receives the credit. *(default)*
 
 ## 17. Lifecycle
@@ -250,6 +259,8 @@ Implementations set these. Suggested starting values:
 | "Active" for voting | contributed in the last 6 months |
 | Vote cap per person | 25% |
 | Network slice | 0–1% |
+| Corpus kept from profit | 0–30% |
+| AI judge runs per contribution | 3 (middle level counts) |
 | Challenge window | 7 days |
 | Impact share passed to builds-on | 20% |
 
