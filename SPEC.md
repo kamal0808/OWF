@@ -86,7 +86,7 @@ Credit has to mean the same thing on every venture and in every year, so it's an
 
 - Every judgement compares new work against the reference set. Nobody scores in the abstract.
 - The set is versioned. A new version applies only to work handed in after it's published, never retroactively.
-- The set learns from outcomes. When impact keeps landing on a kind of work the set undervalues, the next version raises it. Nobody can price value perfectly up front, so the set follows what actually worked.
+- The set learns from outcomes. When impact keeps landing on a kind of work the set undervalues, the next version raises it. Nobody can price value perfectly up front, so the set follows what customers actually paid for. Prices are never fixed for good: each version moves toward where the money went.
 - Every award shows the version it was judged under and one sentence on why.
 
 ## 6. Early risk
@@ -98,6 +98,8 @@ Work done early carries more risk: the venture is worth nothing and will probabl
 - Keep it small. Markets price early risk far higher, but a big multiplier lets early people own everything forever and makes newcomers not bother. The multiplier is a fairness nod, not a full risk price. Foundational work gets its real upside through impact on the work that builds on it.
 
 ## 7. From hand-in to credit
+
+Customers are the real judge of value: what people pay for a venture's product is the one score nobody can fake. But they pay for the product, not for each contribution, and most ventures earn nothing for a long time. So credit comes in two parts. A small award at hand-in says the work happened and roughly how big it was, so work done before any revenue still counts. Most credit comes later as impact, and once a venture earns money, that impact follows the money (section 10). *(default)*
 
 Every contribution goes through the same steps, and every step is recorded. Nothing is edited after the fact: corrections, challenges and impact are new entries on top of the old ones. *(default)*
 
@@ -117,7 +119,7 @@ Once it's judged, the record also holds the stage multiplier, the reference set 
 ### The steps
 
 1. **Handed in.** The record is created and timestamped. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
-2. **Judged.** The judge places the contribution against the reference set (below) and gives a provisional award with its why. Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. *(default)*
+2. **Judged.** The judge places the contribution against the reference set (below) and gives a provisional award with its why. Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
 3. **Challenge window.** Anyone can challenge it for a fixed period. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
 4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
 5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
@@ -161,7 +163,8 @@ Each person on a contribution gets:
 
 ## 10. Impact *(default)*
 
-- Each venture picks 1–3 outcome measures for its stage, locked before each measurement window.
+- Impact is where most credit should come from over a venture's life. The hand-in award is a starting point; customers decide the rest. *(default)*
+- Each venture picks 1–3 outcome measures for its stage, locked before each measurement window. Once a venture earns money, revenue is always one of them. Before that, the measures are the closest signals of future revenue (people signed up, people using it, people saying they'd pay). *(default)*
 - Impact is paid per unit of outcome moved, with a cap, not as a fixed pot. A fixed pot turns builders into rivals who gain when others fail.
 - Impact adds credit to the contributions that moved the outcome, and through "builds on" to the work they stood on. It never takes credit away.
 - Impact is judged like value: the same outside judge decides which contributions moved the outcome and by how much, comparing them with each other, and gives a one-sentence why. Only work handed in before the measurement window started can earn that window's impact. *(default)*
