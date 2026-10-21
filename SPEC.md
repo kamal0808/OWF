@@ -1,286 +1,128 @@
-# Open Work Framework v0.1
+# Open Work Framework v0.2
 
-Draft, 2026-10-06. Items marked *(default)* are proposed and may still change; everything else is settled for v0.1.
+Draft, 2026-10-21. Items marked *(default)* are proposed and may still change.
 
-> "Genius is one percent inspiration, ninety-nine percent perspiration." (Thomas Edison)
+## What OWF is
 
-## The thesis
+OWF is how work happens in the open: people who may not know each other see what needs doing, pick it up, hand it in, and everyone can see who did what. It works in any setting, whether that's a startup, an open-source project, a co-op, a neighbourhood cleanup or a company's own team.
 
-In a company, capital earns ownership: money buys shares, and money makes more money. OWF makes work the capital. You invest skill and time instead of cash, and that work earns you a share of what gets built. Ideas matter, but they're the 1%. Doing the work is the 99%.
+OWF says nothing about rewards. Money, equity, tokens, a share of profit, reputation or nothing at all: each setting picks its own and plugs it in. OWF's job is to make sure that whatever the reward is, it lands on real work and the right people.
 
-This isn't communism (nobody plans or equalises outcomes) and it isn't capitalism (money doesn't steer). Labor hires capital, not the other way round: money is welcome, gets a fair return, and never gets control.
+OWF is a framework, not a product. It names no tool, platform or organisation. When a rule can be precise or simple and legible, pick legible.
 
-OWF is a framework, not a product. It defines what work, credit and ownership mean and the rules that keep them fair. It says nothing about any tool, platform or organisation. Anyone can build an implementation on it and pick their own parameters.
+## 1. Definitions
 
-The rules exist so people feel it's fair enough to keep showing up. When a rule can be precise or simple and legible, pick legible.
+**Project.** Anything people build together toward a shared outcome: a product, a service, a campaign, a cleanup, a co-op.
 
-## 1. Three units that never mix
+**Need.** An outcome the project wants ("ten paying users", "a working signup", "the river bank cleared"). Needs are prompts, not gates: a contribution doesn't have to answer a posted need.
 
-| Unit | Measures | Scope |
-|---|---|---|
-| **Credit** | work done | the same everywhere |
-| **Ownership %** | your share of one venture | per venture |
-| **Money** | what the venture is worth | set by the market |
+**Idea.** A claim about what should be done, with no evidence. "People should do X." Talk, advice, discussion. Good and bad ideas look the same until someone acts on one.
 
-Credit is a unit of work, not of money. The same work at the same stage earns the same credit on any venture. What that credit is worth in money depends only on how the venture does, through your ownership %.
+**Work.** Something someone else received: a customer, a teammate or the project itself. Until it's received, it's an idea, a plan or work in progress. A tailor's shirt counts when the customer takes it, code when it's merged, a campaign when it runs. Three questions decide it: does something new exist (if not, it's an idea); did someone else receive it (if not, it isn't finished); can the person who received it say so (if yes, it's work). Connecting people, advising and coordinating are work when the people they helped confirm it.
 
-## 2. Definitions
+**Contribution.** A claim that you added something to a project, plus its evidence. A contribution is atomic if it's useful on its own and can be checked on its own.
 
-**Venture.** Anything people build together toward a shared outcome: a product, a service, a campaign, a co-op. Ownership only ever means something relative to one venture.
+**Evidence.** Something another person can check without taking your word for it. Most often it's the receiver saying so, plus whatever shows the thing itself. Confirming must be possible for anyone, including people who can't read or write. Fabricated evidence (invented interviews, fake users, a friend confirming work that never happened) makes a contribution worthless. Which tools helped, AI included, never matters; whether it's real always does.
 
-**Need.** An outcome the venture wants ("ten paying users", "a working signup"). Needs are prompts, not gates: a contribution doesn't have to answer a posted need.
+**Attribution.** Two things about a contribution, kept separate from whatever it earns:
+- **Who**: the people behind it and their split, adding up to 1. One person proposes the split and every person named confirms or counters it. Nobody states their own share separately, because self-estimates of joint work always add up to more than 100%. *(default)*
+- **Builds on**: the idea, need or earlier contribution it stands on. The person who did the work names it, and anyone can challenge it.
 
-**Idea.** A claim about what should be done, with no evidence. "People should do X." Talk, advice, discussion, gyaan. Good and bad gyaan look the same until someone acts on it.
+Attribution answers "who". The reward answers "how much". A dispute about one should never turn into a dispute about the other.
 
-**Work.** Something someone else received: a customer, a teammate or the venture itself. Until it's received, it's an idea, a plan or work in progress. A tailor's shirt counts when the customer takes it, code when it's merged, a campaign when it runs, twenty bags when the shop has them. Three questions decide it: does something new exist (if not, it's an idea); did someone else receive it (if not, it isn't finished); can the person who received it say so (if yes, it's work). Connecting people, advising and coordinating are work when the people they helped confirm it.
+## 2. Needs are public
 
-**Contribution (the unit of work).** A claim that you added something to a venture, plus its evidence. A contribution is atomic if it's useful on its own and can be judged on its own. If splitting it doesn't produce two things that each stand alone, it's one contribution. *(default)*
+- What a project needs is written down where anyone can see it, with enough context for a stranger to start.
+- Anyone can split a goal into needs. That's planning work, and it's credited through "builds on" when the needs get done.
+- A need may carry a price up front, an expected range, or nothing. *(each setting decides)*
+- **Connecting ideas.** Similar ideas are suggested for merging, and their authors accept or decline. Ideas can be linked: one follows another, or several sit side by side as parts of a bigger idea. The links form a map anyone can read, so people see where their work fits.
 
-**Evidence.** Something another person can check without taking your word for it. Most often it's the receiver saying so, plus whatever shows the thing itself. Confirming must be possible for anyone, including people who can't read or write. A customer paying is the strongest confirmation there is. Fabricated evidence (invented interviews, fake users, a friend confirming work that never happened) makes a contribution worthless. Which tools helped, AI included, never matters; whether it's real always does.
+## 3. Anyone can pick up work
 
-**Attribution (the unit of attribution).** Two things about a contribution, kept separate from its value:
-- **Who**: the people behind it and their split, adding up to 1. One person proposes the whole split from the evidence and every person named confirms or counters it. Nobody states their own share separately, because self-estimates of joint work always add up to more than 100%. *(default)*
-- **Builds on**: the idea or earlier contribution it builds on. The person who did the work names it, not the idea-giver, and anyone can challenge it. *(default)*
+- Nobody needs permission to start on a public need.
+- **Soft claims, no races.** Anyone can mark "I'm working on this"; the claim expires if they go quiet. Others can still work on it and are nudged to team up. Races waste work, favour whoever has the most free time and turn builders into rivals.
+- A project may keep some work private. What's private is said openly, so nobody mistakes a closed door for an empty room.
 
-Attribution answers "who". Value answers "how much". A dispute about one should never turn into a dispute about the other.
+## 4. Handing in
 
-**Value.** How much a contribution adds, judged when it's handed in and topped up later when real impact shows. Time spent is never value. Quality and impact are.
-
-**Credit.** Value expressed in the credit unit. Once given, credit never goes down. Impact can add to it later; only proven fraud removes it.
-
-**Ownership.** Your share of one venture, worked out from the pools in section 4.
-
-**Dilution.** New credit shrinks everyone's % but never anyone's credit. Dilution is fair when the venture grows at least as much as your slice shrinks. People accept being diluted by someone who made the thing bigger. Junk doesn't need punishing: it keeps its credit but falls behind as good work earns impact.
-
-## 3. Splitting big goals into needs
-
-- Anyone can split a goal into needs. That's planning work, and it earns through "builds on" when the needs get done.
-- Needs carry no fixed price. Each shows an expected level ("probably level 5–6"), so people know roughly what it's worth before starting, while the real level is judged on delivery. *(default)*
-- Priority among needs is set by active credit, with the usual per-person vote cap. *(default)*
-- **Connecting ideas.** Ideas rarely arrive alone. Similar ideas are suggested for merging, and their authors accept or decline. Ideas can also be linked: one follows another (B only makes sense once A exists), or several sit side by side as parts of a bigger idea. The links form a map anyone can read, so people see where their work fits. *(default)*
-  - **Merged ideas share their slice.** Work built on the merged idea pays its 1% slice equally to the authors of every idea merged in that was posted before work started on any of them. An idea posted after work began on a similar one earns only if work builds on what it adds.
-  - **Links pass a share back, one level.** Work built on an idea counts toward that idea's slice of the 1%; a fixed share of that weight (20%, the same as impact) also counts toward the idea it follows or the bigger idea it's part of. One level only, so it stays explainable.
-- **Soft claims, no races.** Anyone can mark "I'm working on this"; the claim expires if they go quiet. Others can still work on it and are nudged to team up. A second delivery earns only for what it adds beyond the first. Races waste work, favour whoever has the most free time and turn builders into rivals.
-
-## 4. The pools
-
-Every venture's ownership is split into pools:
-
-| Pool | Share | Who earns it | How it's split |
-|---|---|---|---|
-| **Idea** | 1%, forever | people whose ideas got executed | by the credit of the work built on each idea |
-| **Work** | the rest | people who did the work | your credit ÷ all credit in the venture |
-| **Capital** | set at each raise | people who put in money | by money put in |
-| **Network** (optional) | a small fixed slice | a network that hosts many ventures | its own rules |
-
-- The idea pool stays exactly 1%, whatever happens. Capital and any network slice come out of the work side, never out of the 1%.
-- Only executed ideas earn. An idea's slice of the 1% = credit of work built on it ÷ all work credit in the venture. Ideas nobody built on earn nothing.
-- Ideas don't earn credit themselves. If they did, 1 idea-credit and 1 work-credit would buy very different ownership, and "1 credit = 1 credit" would break. *(default)*
-- Someone who has an idea and also builds it earns from both pools. The idea share is capped by the 1%, so this can't be farmed.
-- Capital is money only. Anything an investor does beyond money (introductions, advice, sales) is work and earns credit like anyone else's.
-- Capital buys a share of the capital pool at a price agreed at each raise. That price is the venture's valuation. Capital doesn't earn credit. *(default)*
-- A network slice lets ventures share risk with each other, the way Mondragon's co-operatives back each other. If a network takes one, it's fixed before the venture's first contributor joins and never raised afterwards. *(default)*
-
-Example with a 1% network slice, after one raise of 20%: idea 1%, network 1%, capital 20%, work 78%.
-
-## 5. Defining 1 credit *(default)*
-
-Credit has to mean the same thing on every venture and in every year, so it's anchored to **levels** and a **reference set**.
-
-Every contribution gets a level from 0 to 10 for how much it moves the venture forward. Each level is worth a fixed number of credits, growing like the Fibonacci sequence:
-
-| Level | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Credit | 0 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 | 89 |
-
-- **The level measures value, not difficulty.** It's how much the work changed things for users, the product or the venture. Difficulty, length, polish and time spent can't raise it on their own: whatever gets scored gets gamed, and scoring complexity rewards making work look hard. *(default)*
-- **Level 0 is not work.** Ideas, opinions and plans without checkable evidence earn no credit; ideas earn from the 1% pool instead. Without a zero, every comment would earn something, and a floor on small things is what makes splitting and fake work pay.
-- **Why Fibonacci.** Each level is about 1.6× the one below, which matches how people and models compare sizes: by ratio, not by difference. A linear 1–10 scale caps the biggest work at 10× the smallest and pays tiny work far too much (in simulation, splitting paid 2.9× and fake work took 43% of credit). With Fibonacci levels the simulation matched free-number judging within a few percent.
-- **The reference set** is real contributions at each level, one or more per level, so every judgement compares new work against examples. Nobody scores in the abstract.
-- The set is versioned. A new version applies only to work handed in after it's published, never retroactively.
-- The set learns from outcomes. When impact keeps landing on a kind of work the set undervalues, the next version raises it. Nobody can price value perfectly up front, so the set follows what customers actually paid for. Prices are never fixed for good: each version moves toward where the money went.
-- Every award shows the level, the version it was judged under and one sentence on why ("level 6 = 13: users would miss it, like *The Wall*").
-
-## 6. Early risk
-
-Work done early carries more risk: the venture is worth nothing and will probably die. Skill invested early is like seed money, so it earns a stage multiplier.
-
-- The multiplier is fixed at the moment of the contribution and never changes afterwards.
-- A venture moves stage only on evidence (first live user, first revenue), dated by when the evidence happened, not when someone posted it.
-- Keep it small. Markets price early risk far higher, but a big multiplier lets early people own everything forever and makes newcomers not bother. The multiplier is a fairness nod, not a full risk price. Foundational work gets its real upside through impact on the work that builds on it.
-
-## 7. From hand-in to credit
-
-Customers are the real judge of value: what people pay for a venture's product is the one score nobody can fake. But they pay for the product, not for each contribution, and most ventures earn nothing for a long time. So credit comes in two parts. A small award at hand-in says the work happened and roughly how big it was, so work done before any revenue still counts. Most credit comes later as impact, and once a venture earns money, that impact follows the money (section 10). *(default)*
-
-### Settling each period
-
-Nobody should have to report their own work. Work is recorded from where it happens, and settled once per period (a month by default):
-
-- Each person sees their record for the period, what it's worth, and can add what the record missed.
-- Everyone in the venture sees everyone's record, and anyone can object within a fixed window. Silence is agreement.
-- When the window closes, the period's credit is final and its profit is paid out (section 16).
-- Work recorded where it happened is confirmed by that record itself (the code was merged, the payment arrived). Work a person adds needs the receiver to confirm it (section 2).
-- A contribution can also be recorded on its own at any time; it settles with the rest of its period. *(default)*
-
-Every contribution goes through the same steps, and every step is recorded. Nothing is edited after the fact: corrections, challenges and impact are new entries on top of the old ones. *(default)*
-
-### The record
+Nobody should have to report their own work twice. Work is recorded from where it happens wherever possible; a person adds only what the record missed.
 
 A contribution is handed in with:
 
 - **Claim**: what was done, in a sentence or two.
 - **Evidence**: links or files someone else can check.
-- **Who**: the people behind it and the proposed split, adding up to 1.
+- **Who**: the people behind it and the proposed split.
 - **Builds on**: the idea, need or earlier contributions it stands on.
 - **Need** (optional): the posted need it answers.
-- **Cash** (if any): the share of this work already paid in money.
 
-Once it's judged, the record also holds the stage multiplier, the reference set version, the award and the one-sentence why.
+Work recorded where it happened is confirmed by that record itself (the code was merged, the payment arrived). Work a person adds needs the receiver to confirm it.
 
-### The steps
+## 5. Acceptance is visible
 
-1. **Recorded.** The record is created and timestamped, recorded from where the work happened or added by the person. Evidence is checked for structure only: does it exist, can someone else open it. Missing or unopenable evidence goes back to the person, it isn't judged.
-2. **Judged.** The judge gives the contribution a level against the reference set (below) and a provisional award with its why. If the judge can give different answers to the same work (any automated judge can), it judges several times and the middle level counts; when its answers are two or more levels apart, a person decides. Borderline work then doesn't swing between levels by chance. *(default)* Nobody judges a contribution they're named on, or one that builds on their own work. Judges hold no credit in the venture: everyone already in it gains a little when a newcomer gets less, so insiders can't be the ones placing newcomers' work. A random sample of awards is re-judged by someone else outside the venture. While nobody outside is available yet, an insider may judge, but those awards are marked and stay pending until an outside judge has reviewed them. *(default)*
-3. **Objection window.** The period's records are visible to the whole venture, and anyone can challenge an item for a fixed period. Silence counts as agreement. A challenge names one thing: the value, the who and split, the builds-on, or fraud. These are handled separately, so a split dispute never reopens the value. Everyone named on the contribution confirms or counters their split in this window; silence counts as confirming.
-4. **Final.** When the window closes with no open challenges, the award is final and becomes credit. From then on it never goes down, except for proven fraud.
-5. **Impact.** Later impact adds new entries on top (section 10). The original award is never re-judged.
+1. **Recorded.** The hand-in is timestamped. Evidence is checked for structure only: does it exist, can someone else open it. Missing evidence goes back to the person.
+2. **Accepted or declined.** Someone accepts the work, with a reason anyone can read. Who accepts (an owner, reviewers, a vote, a judge) is up to each setting. Nobody accepts a contribution they're named on. *(default)*
+3. **Objection window.** Accepted work is visible to the whole project, and anyone can challenge it for a set time. Silence counts as agreement. A challenge names one thing: the work itself, the who and split, the builds-on, or fraud. These are handled separately.
+4. **Final.** When the window closes with no open challenges, the contribution is final.
 
-Provisional awards are shown as pending. They don't count toward ownership % or votes until the challenge window closes. After that, a contribution still under a value challenge counts at the amount the challenger proposed until it's settled, so a challenge can delay credit but can't wipe it out of a vote. *(default)*
+## 6. The record is permanent
 
-### The value formula
+- Every step is recorded and nothing is edited after the fact. Corrections, challenges and later recognition are new entries on top of the old ones.
+- The record is public, or at least visible to everyone in the project. Anyone can see who did what, when, and on what evidence.
+- A final contribution stays on the record. Only proven fraud removes it, and the removal is itself recorded.
 
-Each person on a contribution gets:
+## 7. Invisible work
 
-**credit = level credit × stage multiplier × (1 − cash share) × their split**
+Help, coordination, dead ends, maintenance and prevention leave no artifact of their own, so they need an explicit rule or they lose to self-promotion.
 
-- **Level credit** is the credit for the contribution's level (section 5). The judge picks the level by comparing the work with reference examples at nearby levels, and the example plus the reason are the one-sentence why.
-- The judge may use a rubric to reach the level (what changed, fit with what the venture needs now, how checkable the evidence is), but what comes out is always a level. A rubric score is never turned into credit directly.
-- **Stage multiplier** is the venture's stage at hand-in (section 6). It's fixed at that moment, even if the stage is later backdated.
-- **Cash share** is the part of the work already paid in money, agreed when the payment was agreed: half paid means half the credit. *(default)*
-- The reference set version is the one published at hand-in.
-
-### Overlap, splitting and padding
-
-- **Overlap is judged at the margin.** If earlier work already covers part of this one (a second delivery on the same need, a redo, a fix), it's placed only for what it adds beyond what existed at hand-in.
-- **Splitting doesn't pay.** Work from the same people toward the same need is judged as a running total. Each new piece re-levels everything they've handed in for that need so far, and they earn the difference from what they've already been awarded (never less than zero). Five pieces handed in over five weeks earn what the whole would have. *(default)*
-- **Small work adds up.** The same running total lets small pieces count (a typo fixed here, a reply there) without each one having to reach level 1 on its own.
-- **Padding doesn't pay.** Length, polish and volume aren't value. The level is set by what the work does, and the reference set includes short, high-value examples so the judge has something to compare against.
-- **Reposting doesn't pay.** Evidence already used in an earlier contribution earns nothing again.
-- **Repetition doesn't pay.** Low-value work handed in over and over is placed at the margin, so the tenth copy of something adds close to nothing. Catching fake work is what matters most: in simulation, fake work that slips through is the biggest leak of credit away from real builders.
-
-## 8. Capital and dilution *(default)*
-
-- **Between raises, capital's % is fixed.** New work dilutes only the work pool. Investors paid for a fixed share, and the work after a raise is what their money funds. Every raise says it in one sentence: "the work pool stays at X%, shared by everyone who contributes until the next raise."
-- **Each new raise dilutes the work pool and earlier capital proportionally.** The 1% is never touched. Earlier investors may buy in again at the new price to keep their share.
-- **No liquidation preference.** On any sale, at any price, everyone is paid by their %. Investors are never paid first: that would make builders work for capital whenever things go badly.
-- **Capital gets a return, not control.** Capital has no votes, and the capital pool has a ceiling below half, so builders always own most of what they build.
-
-## 9. Control *(default)*
-
-- Raises, selling the venture, shutting it down and changing its licence are decided by **active credit**: credit held by people who contributed recently. Credit is owned forever, but only active builders steer. Without this, people who left slowly outvote the people building.
-- No single person carries more than a set share of any vote, however much credit they hold. The cap and "active" count per verified identity, not per account, so spreading credit across extra accounts (for example by naming them on a split) gains no extra say. *(default)*
-- Anyone active can propose a rule change. It's adopted by the same vote, applies only to future work, and is never retroactive.
-
-## 10. Impact *(default)*
-
-- Impact is where most credit should come from over a venture's life. The hand-in award is a starting point; customers decide the rest. *(default)*
-- Each venture picks 1–3 outcome measures for its stage, locked before each measurement window. Once a venture earns money, revenue is always one of them. Before that, the measures are the closest signals of future revenue (people signed up, people using it, people saying they'd pay). *(default)*
-- Impact is paid per unit of outcome moved, with a cap, not as a fixed pot. A fixed pot turns builders into rivals who gain when others fail.
-- Impact adds credit to the contributions that moved the outcome, and through "builds on" to the work they stood on. It never takes credit away.
-- Impact is judged like value: the same outside judge decides which contributions moved the outcome and by how much, comparing them with each other, and gives a one-sentence why. Only work handed in before the measurement window started can earn that window's impact. *(default)*
-- A fixed share of each impact award passes to the direct builds-on of the contribution that earned it, one level only, out of the award rather than on top of it, so building on your own work never earns twice. Longer chains get impossible to explain, and work further back already earned from the level in between. *(default)*
-
-## 11. Cash and access *(default)*
-
-Working for ownership alone only works for people who can afford to. Small cash payments for work are allowed, and whatever was paid in cash is subtracted from that contribution's credit, as a share agreed when the payment is agreed (section 7).
-
-## 12. Maintenance
-
-Keeping things running (uptime, support, moderation, updates, books) is work, judged like all work by what got handled, never by time spent.
-
-- Handed in per period (e.g. monthly) as one contribution with evidence: incidents handled, requests answered, reviews done.
-- The reference set includes maintenance examples, so it's judged against real ones like everything else.
-- When something earns impact, part of it flows to the maintenance that kept it alive, because maintenance's value is that nothing broke. *(default)*
-
-## 13. Invisible work
-
-Help, coordination, dead ends and prevention leave no artifact of their own, so they need an explicit rule or they lose to self-promotion.
-
-- Helping someone (reviewing, mentoring, unblocking) is handed in by the helper as their own contribution. The evidence is the helped person's confirmation or a visible trace, and the value is judged by what changed in the helped work.
-- Help earns new credit, small and only when confirmed. It never comes out of the helped person's credit, so naming helpers costs nothing.
+- Helping someone (reviewing, mentoring, unblocking) is handed in by the helper as their own contribution. The evidence is the helped person's confirmation or a visible trace. It never comes out of the helped person's credit, so naming helpers costs nothing.
+- Keeping things running (uptime, support, moderation, books) is work, handed in per period as one contribution with what got handled. Time spent isn't the evidence; what got handled is.
 - Dead ends with evidence ("we tested X, it doesn't work, here's the data") are work.
-- Coordination and planning earn through "builds on": work done from a plan sends impact back to it.
-- Implementations watch for pairs or groups who always confirm each other's help.
+- Coordination and planning are credited through "builds on".
 
-## 14. Disputes and legibility
+## 8. Fair play
+
+Whatever the reward, these don't pay:
+
+- **Splitting.** Work by the same people toward the same need counts as one running total, so five small hand-ins are worth what the whole is.
+- **Padding.** Length, polish and volume aren't value. What the work does is.
+- **Reposting.** Evidence already used earns nothing again.
+- **Racing.** A second delivery on the same need counts only for what it adds beyond the first.
+
+## 9. Disputes
 
 - Disputes look for middle ground first: talk, then a mediator proposes middle options, and only as a last resort neutral people pick one of those options. Never all-or-nothing, except for fake work.
-- Responses are graduated between a value dispute and fraud: a note, then credit held pending review, then removal for proven fake work. *(default)*
-- Awards are provisional until the challenge window closes, then final. *(default)*
-- Show ownership as credit first, since it only grows. Show % next to what changed it and how far the venture has moved. Default to a personal view, and keep the full ledger public one step away. Put the most explanation into the bad moments: low awards, challenges, dilution and raises. *(default)*
+- Responses are graduated: a note, then the contribution held pending review, then removal for proven fake work.
+- Put the most explanation into the bad moments: declined work, challenges, removals.
 
-## 15. Reputation
+## 10. Reputation
 
-A public memory of who did what, across every venture.
+A public memory of who did what, across every project.
 
-- A record, not a score: ventures worked on, credit earned, impact, confirmed help, and challenges upheld, each with its evidence. A single reputation number gets farmed the moment it exists.
-- Reputation never turns into ownership or votes anywhere. It's for deciding who to trust and work with.
+- A record, not a score: projects worked on, contributions accepted, confirmed help, and challenges upheld, each with its evidence. A single reputation number gets farmed the moment it exists.
 - Proven fraud stays on the record. Smaller upheld challenges fade after a set time, so people can learn. *(default)*
-- Pseudonyms are allowed. A verified identity is held privately, because owning and assigning work need a real person, but the public can see only the pseudonym and its full record. The record is the trust signal, not the name.
+- Pseudonyms are allowed. Where the reward needs a real person, a verified identity is held privately; the public sees the pseudonym and its full record.
 
-## 16. Getting value out
+## 11. Joining, leaving, forking
 
-- **Credit is earned only by working.** It's never transferred, sold, gifted, lent, or charged interest or commission on. The only way to get work credit is to do work.
-- **Barter is allowed, as work for work.** Two people or teams can agree to work on each other's ventures ("I'll do your design, you do my backend"). Each earns credit where their work happened, judged on its own like any contribution. What's exchanged is work, never credit.
-- **No interest anywhere.** Capital comes in as ownership in the capital pool, never as a loan with interest.
-- **Profit is paid by %**, across all pools, the same way as a sale. No class of owner is paid first. Inside the work pool, each person's share of a period's profit P is their credit c over all credit S in the venture: **c × P ÷ S**, the formula OWF started with in 2022. It's paid each period, once the objection window closes (section 7). Before a venture makes a profit, credit keeps growing and nothing is paid. *(default)*
-- **Corpus (optional).** A venture may keep a fixed share of profit as a reserve for running costs before paying out (2022 suggested 30%). It's set before the first contributor joins and only changed by a vote of active credit.
-- **Buy-back from profit.** Once a venture is profitable, a set share of profit buys back credit from anyone who wants out, at the last agreed valuation, paid over time. Bought-back credit is retired, so everyone else's % rises. This isn't a transfer: nobody else receives the credit. *(default)*
+- **Joining** is open: anyone can contribute to any public need.
+- **Leaving.** People who stop contributing keep their record. Only proven fraud changes it.
+- **Work from before the rules.** It's handed in with evidence and goes through the same steps as everyone's. Nobody, founders included, gets credited by decree.
+- **Forking** is each project's choice, said openly up front. Where forking is allowed, the fork keeps the original record of everything it reuses.
 
-## 17. Lifecycle
+## 12. Invariants
 
-- **Joining** is open. Anyone can contribute to any venture.
-- **Leaving.** People who stop contributing keep all their credit. Only proven fraud loses it.
-- **Work from before the rules.** It's handed in with evidence and judged by the same rules as everyone's, before the first outside contributor joins. Nobody, founders included, gets credit by decree.
-- **Pivot.** Same venture, new outcome. All credit carries over: credit lives in the venture, not the product. Stage counts only what has evidence now, so a pivot that loses its users drops back a stage for new work. Day-to-day direction emerges from what people build; changing the venture's stated outcome takes a vote of active credit, because it changes what "fits what the venture needs now" means. The idea pool shifts on its own toward whoever proposed the new direction, as new work builds on it.
-- **Fork.** Forking is a right: anyone can take a venture's work and start a new venture without asking. It's the exit that keeps governance honest. The fork has its own ledger, and the original contributors get the credit of everything it reuses copied in as inherited credit. Everything up to the fork date counts as reused unless the forkers show otherwise. Inherited credit dilutes like any other and carries no vote in the fork unless its holders contribute there.
-- **Dormant and dead.** A venture with no contributions for a while is dormant, not dead. Anyone can revive it by contributing; old credit stays, and its stage has usually dropped, so revivers earn the higher multiplier. Credit stays on everyone's record as proof of work even when ownership is worth nothing. Selling what's left (code, name, users) is voted by active credit, or by all credit when nobody is active.
-- **Bake.** A venture may define a moment when credit converts into fixed equity (incorporation, a funding round). OWF allows it but doesn't require it.
+These hold everywhere OWF is used:
 
-## 18. Invariants
+1. Needs are public, and anyone can pick up a public need.
+2. A contribution is a claim plus evidence someone else can check.
+3. Attribution is separate from reward.
+4. The record is append-only. Only proven fraud removes a contribution, and the removal is recorded.
+5. Rules are published, versioned, and never applied retroactively.
+6. Anyone can understand in one sentence why their work was accepted or declined.
+7. Splitting, padding or reposting the same work never earns more.
 
-These hold in every OWF implementation:
+## 13. Left to each setting
 
-1. Splitting, padding or reposting the same work never earns more.
-2. Credit is never taken away, except for proven fraud.
-3. Rules are published, versioned, and never applied retroactively.
-4. Anyone can understand in one sentence why they got what they got.
-5. The idea pool is 1%, forever.
-6. Time is not value.
-7. Capital never steers, and is never paid ahead of work.
-8. Credit is earned only by working: never transferred, sold, lent, or charged interest or commission on.
+The reward and how it's sized, whether needs are priced up front or valued after, who accepts work, challenge windows, identity checks, whether forking is allowed, and every tool.
 
-## 19. Parameters
-
-Implementations set these. Suggested starting values:
-
-| Parameter | Suggested |
-|---|---|
-| Stage multiplier (idea / building / live / revenue) | 2× / 1.5× / 1.2× / 1× |
-| Capital pool ceiling | 49% |
-| "Active" for voting | contributed in the last 6 months |
-| Vote cap per person | 25% |
-| Network slice | 0–1% |
-| Corpus kept from profit | 0–30% |
-| Judgements per contribution, when the judge varies | 3 (middle level counts) |
-| Challenge window | 7 days |
-| Impact share passed to builds-on | 20% |
-
-## 20. Left to each implementation
-
-How a tool's activity becomes evidence, who or what does the judging (and how it's protected from manipulation), challenge windows and costs, identity checks, the reference set itself, and the parameters above.
-
-## Open questions
-
-- None at framework level for v0.1. Defaults marked *(default)* are open to change.
+TOPC's choices (1% to ideas, 99% to work, Neki, the co-op) are one setting built on OWF; they live in TOPC's own docs, not here.

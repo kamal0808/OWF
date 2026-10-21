@@ -4,10 +4,10 @@ This file is for any AI agent working in this repo: Claude Code, Codex, Gemini C
 
 ## What this repo is
 
-OWF (Open Work Framework) is an open protocol for working together on ideas and sharing ownership by contribution: splitting work into units, attributing contributions and rewarding them. It is part of **TOPC** (The One Percent Company), a co-operative built in tech where contribution is equity. Anyone can work on a TOPC project, and verified work earns **Neki**, TOPC's reward for contributions (for now an internal, off-chain coin that can't be transferred or sold). Every task splits 1% to whoever had the idea and 99% to whoever did the work. Tasks are picked and handed in through Ideato (ideato.social). Ideato is the first product built on OWF.
+OWF (Open Work Framework) is how work happens in the open, in any setting: public needs, open pick-up, contributions with evidence, attribution, visible acceptance and an append-only record. It holds no rewards: each setting plugs in its own. TOPC (The One Percent Company) started it, and TOPC's own economics (1% to ideas, 99% to work, Neki) live in TOPC's docs, never here. Tasks: `topc-social/owf-tasks`.
 
 - [`SPEC.md`](SPEC.md) is the specification; `README.md` is the plain-language overview; `origins/` is background; `sim/` holds simulations.
-- **The spec is principles only.** Tools, flows, scoring formulas, AI-judge details and anything product-specific belong to the implementation (Ideato and its docs), not here.
+- **The spec is principles only, and reward-free.** Rewards, pricing, scoring formulas, tools, flows and anything product-specific belong to whoever uses OWF, not here. Test: would this hold for any setting, any reward, any tool?
 - This repo is public. Write for anyone reading it cold.
 
 ## Working rules

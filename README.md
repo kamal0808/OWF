@@ -1,36 +1,25 @@
 # 🌍 Open Work Framework (OWF)
 
-**A way for people to work together on ideas and share ownership based on what they actually contribute.**
+**How work happens in the open, in any setting.**
 
-Most ideas die because one person can't build them alone.
+Most ideas die because one person can't build them alone, and the people who could help never find out what's needed or never get credit for what they did.
 
-> Definitions and rules: [SPEC.md](SPEC.md) (v0.1).
-
-OWF asks a simple question:
-
-> **What if anyone could contribute to making an idea real—and earn a fair stake for the work they actually do?**
+> Definitions and rules: [SPEC.md](SPEC.md) (v0.2).
 
 ## How it works
 
-1. **Someone puts forward an idea or problem.**
-2. **People contribute**—with code, design, research, connections, money, or actual work.
-3. **Contributions are recorded and evaluated openly.**
-4. **The people who make it happen share in what it creates.**
+1. **Needs are public.** What needs doing is written down where anyone can see it.
+2. **Anyone can pick up work.** No permission needed to start.
+3. **A contribution is a claim plus evidence** someone else can check.
+4. **Credit goes to whoever did it**, splits and builds-on included.
+5. **Acceptance is visible, and the record is permanent.**
 
-**Ideas matter. Execution matters more.**
+OWF holds no rewards. Money, equity, tokens, profit shares or just reputation: each setting picks its own. OWF makes sure that whatever the reward is, it lands on real work and the right people.
 
-The person who starts an idea can be recognised for it. But most ownership belongs to the people who do the work to make it real.
+It fits a startup, an open-source project, a co-op, a neighbourhood cleanup or a team inside a company.
 
 ## We're building OWF openly
 
-The framework itself is our first experiment.
+The framework itself is our first experiment. If you think you can help (by challenging it, researching existing models, or trying it somewhere), join in.
 
-Our first question:
-
-> **How do we fairly measure and reward different kinds of contributions?**
-
-We don't have the final answer. **That's why this is open.**
-
-If you think you can help—by challenging the idea, researching existing models, designing a system, or building something—join in.
-
-**→ [See what's being worked on](../../issues)**
+**→ [See what's being worked on](https://github.com/topc-social/owf-tasks/issues)**
