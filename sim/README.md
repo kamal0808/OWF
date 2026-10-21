@@ -1,6 +1,6 @@
 # OWF simulation
 
-A small agent-based model that attacks the hand-in-to-credit rules (SPEC section 7). Python 3, no dependencies.
+A small agent-based model that attacks the hand-in-to-credit rules (was OWF SPEC v0.1 section 7; that text now lives in TOPC's ecosystem/ECONOMICS.md). Python 3, no dependencies.
 
 ```
 python3 sim/owf_sim.py
